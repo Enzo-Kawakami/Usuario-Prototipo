@@ -37,6 +37,7 @@ public class UsuarioControler {
 
         if (usuarioOp.isPresent()) {
             Usuario usuarioExistente = usuarioOp.get();
+            usuarioExistente.setId(dadosAtualizados.getId());
             usuarioExistente.setNome(dadosAtualizados.getNome());
             usuarioExistente.setIdade(dadosAtualizados.getIdade());
             usuarioExistente.setDtnasc(dadosAtualizados.getDtnasc());
